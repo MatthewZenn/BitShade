@@ -1,0 +1,126 @@
+body, html {
+  background-color: rgb(14, 14, 14);
+}
+
+@font-face {
+  font-family: SegoeIcons;
+  src:url("../Fonts/Segoe\ Fluent\ Icons.ttf");
+}
+
+#canvas {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 80%;
+  transform: translate(-50%, 0%);
+  background-color: white;
+  image-rendering: pixelated;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(50, 50, 50);
+  height: 90px;
+}
+
+.title {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  font-size: 24pt;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+#refresh {
+  position: absolute;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  top: 40px;
+  color: white;
+  font-size: 18pt;
+  font-family: SegoeIcons;
+  background-color: transparent;
+  border: none;
+}
+
+#pallet {
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  width: 80%;
+  height: 150px;
+  transform: translate(-50%, 0%);
+  background-color: rgb(27, 27, 27);
+}
+
+#one {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  z-index: 3;
+  background-color: hsl(190, 51%, 20%);
+}
+
+#two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background-color: hsl(190, 50%, 40%);
+}
+
+#three {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  z-index: 1;
+  background-color: hsl(190, 50%, 60%);
+}
+
+#four {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: hsl(190, 50%, 80%);
+}
+
+#standard {
+  position: fixed;
+  left: 10%;
+  top: 85%;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 18pt;
+  font-family: SegoeIcons;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
+
+#mono {
+  position: fixed;
+  right: 10%;
+  top: 85%;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 18pt;
+  font-family: SegoeIcons;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
