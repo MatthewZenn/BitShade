@@ -33,10 +33,10 @@ document.getElementById("refresh").addEventListener('click', () => {
 
 function monochro() {
   var huel = Math.floor(Math.random() * (360));
-  document.getElementById("four").style.backgroundColor = `hsl(${huel}, 50%, 20%)`;
-  document.getElementById("three").style.backgroundColor = `hsl(${huel}, 50%, 40%)`;
-  document.getElementById("two").style.backgroundColor = `hsl(${huel}, 50%, 60%)`;
-  document.getElementById("one").style.backgroundColor = `hsl(${huel}, 50%, 80%)`;
+  document.getElementById("four").style.backgroundColor = `hsl(${huel}, 90%, 20%)`;
+  document.getElementById("three").style.backgroundColor = `hsl(${huel}, 90%, 40%)`;
+  document.getElementById("two").style.backgroundColor = `hsl(${huel}, 90%, 60%)`;
+  document.getElementById("one").style.backgroundColor = `hsl(${huel}, 90%, 80%)`;
 
   for(var i = 0; i < art.length; i++) {
     var cube = art[i];
@@ -48,28 +48,28 @@ function monochro() {
             "height": 1
             };
        if (cube[j] == 0) {
-        ctx.fillStyle = `hsl(${huel}, 50%, 20%)`;
+        ctx.fillStyle = `hsl(${huel}, 90%, 20%)`;
         ctx.beginPath();
         ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
         ctx.closePath();
        }
        
        else if (cube[j] == 1) {
-        ctx.fillStyle = `hsl(${huel}, 50%, 40%)`;
+        ctx.fillStyle = `hsl(${huel}, 90%, 40%)`;
         ctx.beginPath();
         ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
         ctx.closePath();
        }
 
        else if (cube[j] == 2) {
-        ctx.fillStyle = `hsl(${huel}, 50%, 60%)`;
+        ctx.fillStyle = `hsl(${huel}, 90%, 60%)`;
         ctx.beginPath();
         ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
         ctx.closePath();
        }
 
        else {
-        ctx.fillStyle = `hsl(${huel}, 50%, 80%)`;
+        ctx.fillStyle = `hsl(${huel}, 90%, 80%)`;
         ctx.beginPath();
         ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
         ctx.closePath();
@@ -89,10 +89,10 @@ document.getElementById("mono").addEventListener('click', () => {
 function pallet() {
   var huel = Math.floor(Math.random() * (180));
 
-  document.getElementById("four").style.backgroundColor = `hsl(${360- huel}, 50%, 20%)`;
-  document.getElementById("three").style.backgroundColor = `hsl(${360-huel}, 50%, 40%)`;
-  document.getElementById("two").style.backgroundColor = `hsl(${huel}, 50%, 60%)`;
-  document.getElementById("one").style.backgroundColor = `hsl(${huel}, 50%, 80%)`;
+  document.getElementById("four").style.backgroundColor = `hsl(${360- huel}, 90%, 20%)`;
+  document.getElementById("three").style.backgroundColor = `hsl(${360-huel}, 90%, 40%)`;
+  document.getElementById("two").style.backgroundColor = `hsl(${huel}, 90%, 60%)`;
+  document.getElementById("one").style.backgroundColor = `hsl(${huel}, 90%, 80%)`;
 
   for(var i = 0; i < art.length; i++) {
       var cube = art[i];
@@ -104,28 +104,28 @@ function pallet() {
               "height": 1
               };
          if (cube[j] == 0) {
-          ctx.fillStyle = `hsl(${360-huel}, 50%, 20%)`;
+          ctx.fillStyle = `hsl(${360-huel}, 90%, 20%)`;
           ctx.beginPath();
           ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
           ctx.closePath();
          }
          
          else if (cube[j] == 1) {
-          ctx.fillStyle = `hsl(${360-huel}, 50%, 40%)`;
+          ctx.fillStyle = `hsl(${360-huel}, 90%, 40%)`;
           ctx.beginPath();
           ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
           ctx.closePath();
          }
 
          else if (cube[j] == 2) {
-          ctx.fillStyle = `hsl(${huel}, 50%, 60%)`;
+          ctx.fillStyle = `hsl(${huel}, 90%, 60%)`;
           ctx.beginPath();
           ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
           ctx.closePath();
          }
 
          else {
-          ctx.fillStyle = `hsl(${huel}, 50%, 80%)`;
+          ctx.fillStyle = `hsl(${huel}, 90%, 80%)`;
           ctx.beginPath();
           ctx.fillRect(rectData.x,rectData.y, rectData.width, rectData.height);
           ctx.closePath();
